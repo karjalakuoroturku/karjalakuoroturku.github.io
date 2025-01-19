@@ -131,6 +131,29 @@ content:
         label: Committee Members
         type: string
         list: true
+  - name: liput
+    label: Liput
+    type: file
+    path: _content/liput.json
+    view:
+      fields: [ title ]
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: content, label: Content, type: rich-text, format: html }
+      - name: ticketSellers
+        label: Lipunmyyjät
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Nimi
+            type: string
+          - name: phone
+            label: Puhelin
+            type: string
+          - name: email
+            label: Sähköposti
+            type: string
   - name: esiintymiset
     label: Esiintymiset
     type: collection

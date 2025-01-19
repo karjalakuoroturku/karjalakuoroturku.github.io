@@ -1,0 +1,11 @@
+{
+    "title": "Liput",
+    "content": "## Lippujen hinnat\n\nKonserttilippujen hinnat vaihtelevat tapahtuman mukaan. Tarkemmat tiedot löydät kunkin konsertin omalta sivulta.\n\n## Lippujen varaus\n\nVoit varata lippuja ottamalla yhteyttä lipunmyyjiin. Liput voi maksaa käteisellä ovella tai etukäteen kuoron tilille (tilinumero ilmoitetaan varauksen yhteydessä).",
+    "ticketSellers": [
+      {
+        "name": "Tuire Leskelä",
+        "phone": "040 834 5849",
+        "email": "info@turunkarjalakuoro.fi"
+      }
+    ]
+  }

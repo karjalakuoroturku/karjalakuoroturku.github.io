@@ -1,0 +1,58 @@
+{
+  "title": "Etusivu",
+  "header": "Turun Karjalakuoro",
+  "subheader": "\"[...] Tällaisen esityksen jälkeen on vain todettava, että “jää sanattomaksi”...\" (Reijo Pajamo, 2010)",
+  "coverImage": "/assets/etusivu/ryhmakuva.jpg",
+  "introText": {
+    "title": "Turun Karjalakuoro 80 vuotta",
+    "content": "Turun Karjalakuoro on vuonna 1944 perustettu sekakuoro, joka vaalii karjalaista lauluperinnettä ja esittää monipuolista kuoro-ohjelmistoa. Vuonna 2024 juhlimme kuoron 80-vuotista taivalta.\n\nJuhlavuoden kunniaksi järjestämme useita konsertteja ja tapahtumia, joissa esittelemme kuoromme rikasta historiaa ja monipuolista osaamista. Ohjelmistomme sisältää niin perinteisiä karjalaisia sävelmiä kuin modernimpaa kuoromusiikkia."
+  },
+  "upcomingPerformancesTitle": "Seuraavat esiintymiset",
+  "ticketButtonText": "Varaa tästä konserttiliput",
+  "galleryImages": [
+    {
+      "src": "/assets/etusivu/kuvagalleria/karjalakuoro-1.jpg",
+      "alt": "Kuoron harjoitukset"
+    },
+    {
+      "src": "/assets/etusivu/kuvagalleria/karjalakuoro-2.jpg",
+      "alt": "Joulukonsertissa"
+    },
+    {
+      "src": "/assets/etusivu/kuvagalleria/karjalakuoro-3.jpg",
+      "alt": "Kevätkonsertti"
+    },
+    {
+      "src": "/assets/etusivu/kuvagalleria/karjalakuoro-4.jpg",
+      "alt": "Kuorolaiset yhdessä"
+    },
+    {
+      "src": "/assets/etusivu/kuvagalleria/karjalakuoro-5.jpg",
+      "alt": "Esiintyminen kirkossa"
+    },
+    {
+      "src": "/assets/etusivu/kuvagalleria/karjalakuoro-6.jpg",
+      "alt": "Esiintyminen kirkossa"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "Esityksistä oli vaikea lähteä etsimään epäkohtia, heikkouksia tai huomautettavaa. Kaikki oli niin tasapainoista: Kuoro lauloi kuin yhdestä suusta seuraten tarkasti johtajansa pienintäkin elettä. Tällaisen esityksen jälkeen on vain todettava, että “jää sanattomaksi”...",
+      "author": "Reijo Pajamo",
+      "title": "Tuomariston jäsen, Lahden kuorokavalkadi",
+      "year": "2012"
+    },
+    {
+      "quote": "Esitys lepäsi hyvin, ei tarvinnut jännittää kuoron puolesta. Varman oloista, kuuntelija sai vain istua ja kuunnella.",
+      "author": "Sari Kaasinen",
+      "title": "Tuomariston jäsen, Helsingin kuorokavalkadi",
+      "year": "2010"
+    },
+    {
+      "quote": "Kuorolla on hieno, tarkka sointi. Kuulee, että kuorotyötä tehdään tavoitteellisesti. Äänet soivat pääasiallisesti hyvässä balanssissa. Kuoro lauloi ohjelmistonsa ulkoa ja esiintyi rutinoituneesti ja ilmeikkäästi. Kuoron ote laulamiseen on varma ja se uskoo omaan tekemiseensä. Kuoro myös selvästi kaipaa haasteita – se tuntui suorastaan “heräävän eloon” hankalimmissa sovituksissa.",
+      "author": "Jaakko Laakso & Ritva Lipasti",
+      "title": "Tuomariston jäsenet, Seinäjoen kuorokavalkadi",
+      "year": "2016"
+    }
+  ]
+}

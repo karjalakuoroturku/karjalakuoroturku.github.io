@@ -1,0 +1,148 @@
+media:
+  input: public/assets
+  output: /assets
+  categories: [ "image" ]
+content:
+  - name: etusivu
+    label: Etusivu
+    type: file
+    path: _content/etusivu.json
+    view:
+      fields: [ title ]
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: header, label: Header, type: string, required: true }
+      - { name: subheader, label: Subheader, type: string, required: true }
+      - name: coverImage
+        label: Iso kuva
+        type: image
+      - name: introText
+        label: Intro
+        type: object
+        fields:
+          - name: title
+            label: Otsikko
+            type: string
+          - name: content 
+            label: Teksti
+            type: rich-text
+            format: html
+      - { name: upcomingPerformancesTitle, label: Upcoming Performances Title, type: string, required: true }
+      - { name: ticketButtonText, label: Ticket Button Text, type: string, required: true }
+      - name: galleryImages
+        label: Kuvagalleria
+        type: object
+        list: true
+        fields:
+          - name: src
+            label: Kuva
+            type: image
+          - name: alt
+            label: Alt-teksti
+            type: string
+      - name: reviews
+        label: Arviot
+        type: object
+        list: true
+        fields:
+          - name: quote
+            label: Lainaus
+            type: string
+          - name: author
+            label: Nimi
+            type: string
+          - name: title
+            label: Rooli
+            type: string
+          - name: year
+            label: Vuosi
+            type: string
+  - name: liity
+    label: Liity kuoroon
+    type: file
+    path: _content/liity.json
+    view:
+      fields: [ title ]
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - name: content
+        label: Content
+        type: rich-text
+        format: html
+      - name: testimonialsSectionTitle
+        label: Kuorolaisten kokemuksia otsikko
+        type: string
+        default: "Kuorolaisten kokemuksia"
+      - name: testimonials
+        label: Kuorolaisten kokemuksia
+        type: object
+        list: true
+        fields:
+          - name: quote
+            label: Lainaus
+            type: rich-text
+            format: html
+          - name: author
+            label: Nimi
+            type: string
+          - name: role
+            label: Rooli
+            type: string
+  - name: contacts
+    label: Yhteystiedot
+    path: _content/yhteystiedot.json
+    type: file
+    format: json
+    fields:
+      - name: title
+        label: Page Title
+        type: string
+        required: true
+      
+      - name: content
+        label: Content
+        type: rich-text
+        format: html
+      
+      - name: mapCoordinates
+        label: Google Maps koordinaatit
+        type: string
+        description: "Koordinaatit, jotka saadaan Google Maps -osoitteesta"
+      
+      - name: contacts
+        label: Contacts
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Role Title
+            type: string
+            required: true
+          - name: name
+            label: Name
+            type: string
+            required: true
+          - name: phone
+            label: Phone Number
+            type: string
+            required: true
+      
+      - name: committeeMembers
+        label: Committee Members
+        type: string
+        list: true
+  - name: esiintymiset
+    label: Esiintymiset
+    type: collection
+    path: _performances
+    view:
+      fields: [ coverImage, name, date ]
+    fields:
+      - { name: name, label: Esityksen nimi, type: string, required: true }
+      - { name: type, label: Esityksen tyyppi, type: string, required: true }
+      - { name: location, label: Paikka, type: string, required: true }
+      - { name: date, label: Päivämäärä ja aika, type: date, options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" }, required: true }
+      - { name: endTime, label: Päättymisaika (esim. 20.00), type: string }
+      - { name: coverImage, label: Kansikuva, type: image }
+      - { name: excerpt, label: Lyhyt kuvaus, type: string }
+      - { name: body, label: Sisältö, type: rich-text }

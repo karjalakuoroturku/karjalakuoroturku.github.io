@@ -178,6 +178,31 @@ content:
             label: Teksti
             type: string
 
+  - name: juhlavuosi2025
+    label: Juhlavuosi 2025
+    type: file
+    path: _content/juhlavuosi-2025.json
+    view:
+      fields: [ title ]
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: content, label: Content, type: rich-text, format: html }
+      - name: sponsors
+        label: Yhteistyökumppanit
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Nimi
+            type: string
+            required: true
+          - name: logo
+            label: Logo
+            type: image
+          - name: url
+            label: Verkkosivut
+            type: string
+
   - name: esiintymiset
     label: Esiintymiset
     type: collection

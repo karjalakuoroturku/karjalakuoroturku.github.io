@@ -126,11 +126,7 @@ content:
             label: Phone Number
             type: string
             required: true
-      
-      - name: committeeMembers
-        label: Committee Members
-        type: string
-        list: true
+
   - name: liput
     label: Liput
     type: file

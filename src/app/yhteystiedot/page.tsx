@@ -37,13 +37,6 @@ export default async function ContactPage() {
               ))}
             </div>
 
-            <h2 className="text-3xl font-bold mt-16 mb-8">Muut toimikunnan jäsenet</h2>
-            <ul className="list-disc pl-4">
-              {page.committeeMembers.map((member, index) => (
-                <li key={index} className="mb-2">{member}</li>
-              ))}
-            </ul>
-
             {page.mapCoordinates && (
               <div className="mt-16 aspect-video w-full">
                 <iframe

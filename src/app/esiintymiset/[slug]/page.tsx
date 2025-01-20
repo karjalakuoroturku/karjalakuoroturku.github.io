@@ -7,6 +7,7 @@ import Container from "../../_components/container";
 import Header from "../../_components/header";
 import { PerformanceBody } from "../../_components/performance-body";
 import { PerformanceHeader } from "../../_components/performance-header";
+import Image from "next/image";
 
 export default async function Performance({ params }: Params) {
   const performance = getPerformanceBySlug(params.slug);
@@ -22,6 +23,19 @@ export default async function Performance({ params }: Params) {
       <Container>
         <Header />
         <article className="lg:my-32 md:my-16 my-8">
+          <div className="relative w-full h-[60vh] mb-8">
+            <Image
+              src={
+                performance.coverImage ||
+                "/assets/esiintymiset/oletuskuva.jpg"
+              }
+              alt={performance.name}
+              fill
+              priority
+              className="object-cover"
+              sizes="100vw"
+            />
+          </div>
           <PerformanceHeader
             name={performance.name}
             type={performance.type}
@@ -31,6 +45,15 @@ export default async function Performance({ params }: Params) {
             endTime={performance.endTime}
           />
           <PerformanceBody content={content} />
+          
+          <div className="flex justify-center mt-12">
+            <a
+              href="/liput"
+              className="inline-flex items-center px-8 py-4 text-xl font-bold text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors duration-200 transform hover:scale-105"
+            >
+              Osta liput
+            </a>
+          </div>
         </article>
       </Container>
     </main>
@@ -56,7 +79,7 @@ export function generateMetadata({ params }: Params): Metadata {
     openGraph: {
       title,
       // images: [post.ogImage.url],
-    }
+    },
   };
 }
 

@@ -18,7 +18,7 @@ export function Gallery({ images }: GalleryProps) {
           <h2 className="mb-12 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
             Kuvagalleria
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-8">
             {images.map((image, index) => (
               <div 
                 key={index} 
@@ -30,6 +30,7 @@ export function Gallery({ images }: GalleryProps) {
                     src={image.src}
                     alt={image.alt}
                     fill
+                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw"
                     className="object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>

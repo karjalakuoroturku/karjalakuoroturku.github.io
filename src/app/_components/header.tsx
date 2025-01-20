@@ -108,9 +108,9 @@ const Header = ({ hideLogo = false }: { hideLogo?: boolean }) => {
               </li>
               <li className={`px-2 rounded-lg ${!isMenuOpen ? "xl:bg-transparent bg-white" : ""}`}>
                 <Link
-                  href="/liity"
+                  href="/tilaa-keikka"
                   className={`hover:text-red-500 ${
-                    pathname === "/liity" ? "text-red-500" : "text-gray-800"
+                    pathname === "/tilaa-keikka" ? "text-red-500" : "text-gray-800"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >

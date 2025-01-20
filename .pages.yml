@@ -150,6 +150,34 @@ content:
           - name: email
             label: Sähköposti
             type: string
+
+  - name: tilaaKeikka
+    label: Tilaa keikka
+    type: file
+    path: _content/tilaa-keikka.json
+    view:
+      fields: [ title ]
+    fields:
+      - { name: title, label: Otsikko, type: string, required: true }
+      - { name: content, label: Sisältö, type: rich-text, format: html }
+      - { name: email, label: Sähköposti, type: string, required: true }
+      - name: requiredInfo
+        label: Pakolliset tiedot
+        type: object
+        list: true
+        fields:
+          - name: text
+            label: Teksti
+            type: string
+      - name: goodToKnow
+        label: Hyvä tietää
+        type: object
+        list: true
+        fields:
+          - name: text
+            label: Teksti
+            type: string
+
   - name: esiintymiset
     label: Esiintymiset
     type: collection

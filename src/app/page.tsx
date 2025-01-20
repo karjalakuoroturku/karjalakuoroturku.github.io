@@ -22,13 +22,20 @@ export default async function Index() {
   return (
     <main>
       <Container>
-        <section className="flex-col flex items-center md:items-start mt-16 mb-16 md:mb-12">
-          <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight">
-            {page.header}
-          </h1>
-          <h4 className="text-center md:text-lg text-sm mt-5 italic">
-            {page.subheader}
-          </h4>
+        <section className="flex flex-col md:flex-row items-center md:items-start gap-8 mt-16 mb-16 md:mb-12">
+          <img
+            src="/assets/logo.png"
+            alt="Turun Karjalakuoro"
+            className="h-32 md:h-48 w-auto"
+          />
+          <div>
+            <h1 className="text-3xl md:text-6xl xl:text-7xl font-bold tracking-tighter leading-tight font-serif uppercase md:text-left text-center">
+              {page.header}
+            </h1>
+            <h4 className="text-center md:text-left md:text-lg text-sm mt-5 italic">
+              {page.subheader}
+            </h4>
+          </div>
         </section>
       </Container>
       <div className="w-full">
@@ -41,6 +48,14 @@ export default async function Index() {
               {page.introText.title}
             </h2>
             <ContentPageBody content={introTextContent} />
+            <div className="flex justify-center my-24">
+              <a
+                href="/juhlavuosi-2025"
+                className="inline-flex items-center px-8 py-4 text-xl font-bold text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors duration-200 transform hover:scale-105"
+              >
+                Lue lisää 80-vuotisjuhlistamme
+              </a>
+            </div>
           </div>
         </section>
         {upcomingPerformances.length > 0 && (

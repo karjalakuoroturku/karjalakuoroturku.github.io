@@ -2,8 +2,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Notes } from "./notes";
 
-const Header = () => {
+const Header = ({ hideLogo = false }: { hideLogo?: boolean }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -23,41 +24,32 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-5">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <img
-              src="/assets/logo.png"
-              alt="Turun Karjalakuoro"
-              className="h-12 w-auto"
-            />
-          </Link>
-
-          {/* Hamburger Menu Button */}
-          <button
-            className="lg:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+        <div className="grid grid-cols-[auto_1fr_auto] items-center h-20">
+          {/* Logo Container */}
+          <div
+            // className={`transform transition-all duration-500 ease-in-out ${
+            //   isScrolled || !hideLogo
+            //     ? "translate-y-0 opacity-100"
+            //     : "-translate-y-full opacity-0"
+            // }`}
           >
-            <div className="w-6 h-5 flex flex-col justify-between">
-              <span
-                className={`block h-0.5 w-full bg-gray-800 transition-all duration-300 ${
-                  isMenuOpen ? "rotate-45 translate-y-2" : ""
-                }`}
-              ></span>
-              <span
-                className={`block h-0.5 w-full bg-gray-800 transition-all duration-300 ${
-                  isMenuOpen ? "opacity-0" : ""
-                }`}
-              ></span>
-              <span
-                className={`block h-0.5 w-full bg-gray-800 transition-all duration-300 ${
-                  isMenuOpen ? "-rotate-45 -translate-y-2" : ""
-                }`}
-              ></span>
-            </div>
-          </button>
+            <Link href="/" className="flex items-center">
+              <img
+                src="/assets/logo.png"
+                alt="Turun Karjalakuoro"
+                className="h-12 w-auto"
+              />
+            </Link>
+          </div>
 
-          {/* Navigation */}
+          {/* Musical notes in middle column */}
+          <div className="relative z-0 w-full h-20">
+            <div className="absolute inset-0 pointer-events-none">
+              <Notes className="w-[310px] h-full"/>
+            </div>
+          </div>
+
+          {/* Navigation in the last column */}
           <nav
             className={`
             lg:block
@@ -69,17 +61,19 @@ const Header = () => {
             text-right
             bg-white lg:bg-transparent
             lg:p-0 p-5 
+            font-bold text-lg
+            z-10
           `}
           >
             <ul
               className="
-              lg:flex lg:space-x-8
+              lg:flex lg:space-x-4
               lg:space-y-0 space-y-4
             "
             >
-              <li>
-                <Link 
-                  href="/" 
+              <li className={`px-2 rounded-lg ${!isMenuOpen ? "xl:bg-transparent bg-white" : ""}`}>
+                <Link
+                  href="/"
                   className={`hover:text-red-500 ${
                     pathname === "/" ? "text-red-500" : "text-gray-800"
                   }`}
@@ -88,18 +82,20 @@ const Header = () => {
                   Etusivu
                 </Link>
               </li>
-              <li>
+              <li className={`px-2 rounded-lg ${!isMenuOpen ? "xl:bg-transparent bg-white" : ""}`}>
                 <Link
                   href="/esiintymiset"
                   className={`hover:text-red-500 ${
-                    pathname === "/esiintymiset" ? "text-red-500" : "text-gray-800"
+                    pathname === "/esiintymiset"
+                      ? "text-red-500"
+                      : "text-gray-800"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Esiintymiset
                 </Link>
               </li>
-              <li>
+              <li className={`px-2 rounded-lg ${!isMenuOpen ? "xl:bg-transparent bg-white" : ""}`}>
                 <Link
                   href="/liity"
                   className={`hover:text-red-500 ${
@@ -110,11 +106,24 @@ const Header = () => {
                   Liity kuoroon
                 </Link>
               </li>
-              <li>
+              <li className={`px-2 rounded-lg ${!isMenuOpen ? "xl:bg-transparent bg-white" : ""}`}>
+                <Link
+                  href="/liity"
+                  className={`hover:text-red-500 ${
+                    pathname === "/liity" ? "text-red-500" : "text-gray-800"
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Tilaa keikka
+                </Link>
+              </li>
+              <li className={`px-2 rounded-lg ${!isMenuOpen ? "xl:bg-transparent bg-white" : ""}`}>
                 <Link
                   href="/yhteystiedot"
                   className={`hover:text-red-500 ${
-                    pathname === "/yhteystiedot" ? "text-red-500" : "text-gray-800"
+                    pathname === "/yhteystiedot"
+                      ? "text-red-500"
+                      : "text-gray-800"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -123,17 +132,45 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/yhteistyokumppanit"
-                  className={`hover:text-red-500 ${
-                    pathname === "/yhteistyokumppanit" ? "text-red-500" : "text-gray-800"
+                  href="/juhlavuosi-2025"
+                  className={`hover:text-red-500 px-4 py-2 rounded-full bg-red-50 border-2 border-red-200 ${
+                    pathname === "/juhlavuosi-2025"
+                      ? "text-red-500"
+                      : "text-gray-800"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Yhteistyökumppanit
+                  Juhlavuosi 2025
                 </Link>
               </li>
             </ul>
           </nav>
+
+          <div className="xs:bg-transparent bg-white rounded-lg z-10 flex items-center justify-center">
+            {/* Hamburger Menu Button */}
+            <button
+              className="lg:hidden px-2 py-2.5"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              <div className="w-6 h-5 flex flex-col justify-between">
+                <span
+                  className={`block h-0.5 w-full bg-gray-800 transition-all duration-300 ${
+                    isMenuOpen ? "rotate-45 translate-y-2" : ""
+                  }`}
+                ></span>
+                <span
+                  className={`block h-0.5 w-full bg-gray-800 transition-all duration-300 ${
+                    isMenuOpen ? "opacity-0" : ""
+                  }`}
+                ></span>
+                <span
+                  className={`block h-0.5 w-full bg-gray-800 transition-all duration-300 ${
+                    isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+                  }`}
+                ></span>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </header>

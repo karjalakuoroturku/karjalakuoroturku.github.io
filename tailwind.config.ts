@@ -7,17 +7,26 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'xxs': '320px',
+      'xs': '475px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       container: {
         center: true,
         padding: '1rem',
-        screens: {
-          sm: '400px',
-          md: '528px',
-          lg: '784px',
-          xl: '1040px',
-          '2xl': '1296px',
-        },
+        // screens: {
+        //   sm: '400px',
+        //   md: '528px',
+        //   lg: '784px',
+        //   xl: '1040px',
+        //   '2xl': '1296px',
+        // },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

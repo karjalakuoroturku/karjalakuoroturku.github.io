@@ -218,3 +218,37 @@ content:
       - { name: coverImage, label: Kansikuva, type: image }
       - { name: excerpt, label: Lyhyt kuvaus, type: string }
       - { name: body, label: Sisältö, type: rich-text }
+
+  - name: footer
+    label: Footer
+    type: file
+    path: _content/footer.json
+    view:
+      fields: [ title ]
+    fields:
+      - name: socialMedia
+        label: TKK muualla verkossa
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Nimi
+            type: string
+            required: true
+          - name: url
+            label: URL
+            type: string
+            required: true
+      - name: partners
+        label: Yhteistyökumppanit
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Nimi
+            type: string
+            required: true
+          - name: url
+            label: URL
+            type: string
+            required: true

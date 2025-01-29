@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { getAllPerformances } from "@/lib/api";
+import { getAllPerformances, getContentBySlug } from "@/lib/api";
 
 export async function Footer() {
   const allPerformances = getAllPerformances();
+  const footerContent = getContentBySlug("footer");
   const now = new Date();
   
   // Get upcoming performances, sorted by date
@@ -69,22 +70,16 @@ export async function Footer() {
               TKK muualla verkossa
             </h3>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  href="https://www.facebook.com/groups/123579054360322/"
-                  className="hover:text-gray-300"
-                >
-                  Facebook
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://www.youtube.com/channel/UCZ_QpM8dDwx88PmP3PPooZQ"
-                  className="hover:text-gray-300"
-                >
-                  YouTube
-                </Link>
-              </li>
+              {footerContent.socialMedia.map((social: any, index: any) => (
+                <li key={index}>
+                  <Link
+                    href={social.url}
+                    className="hover:text-gray-300"
+                  >
+                    {social.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -92,38 +87,17 @@ export async function Footer() {
           <div>
             <h3 className="text-red-500 font-bold mb-4">Yhteistyökumppanit</h3>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  href="http://www.aurorakoren.fi/"
-                  className="hover:text-gray-300"
-                >
-                  Aurorakören
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="http://www.melos.fi/"
-                  className="hover:text-gray-300"
-                >
-                  Kamarikuoro Melos
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="http://www.kulkuset.net/"
-                  className="hover:text-gray-300"
-                >
-                  Sekakuoro Kulkuset
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="http://www.karjalanliitto.fi/turunkarjalaseura"
-                  className="hover:text-gray-300"
-                >
-                  Turun Karjala-Seura ry
-                </Link>
-              </li>
+              {footerContent.partners.map((partner: any, index: any) => (
+                <li key={index}>
+                  <Link
+                    href={partner.url}
+                    target="_blank"
+                    className="hover:text-gray-300"
+                  >
+                    {partner.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

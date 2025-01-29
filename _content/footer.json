@@ -1,0 +1,30 @@
+{
+  "socialMedia": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/groups/123579054360322/"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/channel/UCZ_QpM8dDwx88PmP3PPooZQ"
+    }
+  ],
+  "partners": [
+    {
+      "name": "Aurorakören",
+      "url": "http://www.aurorakoren.fi/"
+    },
+    {
+      "name": "Kamarikuoro Melos",
+      "url": "http://www.melos.fi/"
+    },
+    {
+      "name": "Sekakuoro Kulkuset",
+      "url": "http://www.kulkuset.net/"
+    },
+    {
+      "name": "Turun Karjala-Seura ry",
+      "url": "http://www.karjalanliitto.fi/turunkarjalaseura"
+    }
+  ]
+} 

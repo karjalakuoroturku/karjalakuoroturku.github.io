@@ -1,19 +1,39 @@
 {
   "title": "Tilaa keikka",
-  "content": "Turun Karjalakuoro esiintyy mielellään erilaisissa tilaisuuksissa. Olemme esiintyneet mm. häissä, hautajaisissa, syntymäpäivillä, yritysjuhlissa ja muissa tilaisuuksissa.",
-  "email": "info@turunkarjalakuoro.fi",
+  "content": "Kuoromme ohjelmisto on hyvin monipuolista; kevyttä ja vakavaa, kansanlaulusta iskelmään, karjalaista musiikkia unohtamatta! Uutta ohjelmistoa kehitetään jatkuvasti kuoronjohtajamme Heikki Korhosen johdolla.\n\nKuoro käy esiintymässä kaikenlaisissa tilaisuuksissa vaihtelevalla ohjelmistolla. Omien juhla- ja joulukonserttien lisäksi esiinnymme mm. palvelutaloissa ja karjalaisissa tilaisuuksissa. Olemme esittäneet Tapani Nuutisen säveltämää ”Karjalaisen kansan messua” eri kirkoissa. Olemme mukana myös joka toinen vuosi järjestettävillä Karjalaisilla kesäjuhlilla, mm. kuorokavalkadissa. Kuoromme tekee yhteistyötä myös muiden kuorojen kanssa ja esiintyy kuorotapahtumissa kuten kesäisessä Aurajoki raikaa -tapahtumassa.\n\nMikäli teitä kiinnostaa saada Turun Karjalakuoro esiintymään omiin tilaisuuksiinne, ottakaa yhteyttä kuoromme puheenjohtajaan, Kirsti Kirveennummeen (puh. 040 732 3588)",
+  "email": "info@turunkarjalakuoro.fi ",
   "requiredInfo": [
-    { "text": "Nimesi ja puhelinnumerosi" },
-    { "text": "Tilaisuuden tyyppi (esim. häät, hautajaiset, syntymäpäivät)" },
-    { "text": "Tilaisuuden päivämäärä ja kellonaika" },
-    { "text": "Tilaisuuden paikka ja osoite" },
-    { "text": "Mahdolliset toiveet esitettävästä ohjelmistosta" },
-    { "text": "Muut lisätiedot tilaisuudesta" }
+    {
+      "text": "Nimesi ja puhelinnumerosi"
+    },
+    {
+      "text": "Tilaisuuden tyyppi (esim. häät, hautajaiset, syntymäpäivät)"
+    },
+    {
+      "text": "Tilaisuuden päivämäärä ja kellonaika"
+    },
+    {
+      "text": "Tilaisuuden paikka ja osoite"
+    },
+    {
+      "text": "Mahdolliset toiveet esitettävästä ohjelmistosta"
+    },
+    {
+      "text": "Muut lisätiedot tilaisuudesta"
+    }
   ],
   "goodToKnow": [
-    { "text": "Vastaamme tarjouspyyntöihin yleensä 2-3 arkipäivän kuluessa" },
-    { "text": "Hinta määräytyy tilaisuuden keston ja sijainnin mukaan" },
-    { "text": "Suosittelemme varaamaan kuoron hyvissä ajoin, vähintään 2-3 kuukautta ennen tilaisuutta" },
-    { "text": "Kuoron koko on noin 30-40 laulajaa" }
+    {
+      "text": "Vastaamme tarjouspyyntöihin yleensä 2-3 arkipäivän kuluessa"
+    },
+    {
+      "text": "Hinta määräytyy tilaisuuden keston ja sijainnin mukaan"
+    },
+    {
+      "text": "Suosittelemme varaamaan kuoron hyvissä ajoin, vähintään 2-3 kuukautta ennen tilaisuutta"
+    },
+    {
+      "text": "Kuoron koko on noin 30-40 laulajaa"
+    }
   ]
 }

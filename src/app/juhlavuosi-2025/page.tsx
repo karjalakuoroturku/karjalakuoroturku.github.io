@@ -31,7 +31,7 @@ export default async function AnniversaryPage() {
             <ContentPageBody content={content} />
           </div>
 
-          {page.sponsors.length > 0 && (
+          {page.sponsors?.length > 0 && (
             <div className="mt-16">
               <h2 className="text-3xl md:text-4xl font-bold tracking-tighter leading-tight mb-8">
                 Yhteistyökumppanit

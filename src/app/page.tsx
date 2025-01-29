@@ -69,15 +69,15 @@ export default async function Index() {
               ))}
             </div>
           </section>
+          <div className="flex justify-center my-24">
+            <a
+              href="/liput"
+              className="inline-flex items-center px-8 py-4 text-xl font-bold text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors duration-200 transform hover:scale-105"
+            >
+              {page.ticketButtonText}
+            </a>
+          </div>
         )}
-        <div className="flex justify-center my-24">
-          <a
-            href="/liput"
-            className="inline-flex items-center px-8 py-4 text-xl font-bold text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors duration-200 transform hover:scale-105"
-          >
-            {page.ticketButtonText}
-          </a>
-        </div>
       </Container>
 
       <Gallery images={page.galleryImages} />

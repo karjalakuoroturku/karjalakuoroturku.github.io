@@ -59,24 +59,26 @@ export default async function Index() {
           </div>
         </section>
         {upcomingPerformances.length > 0 && (
-          <section className="my-6">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tighter leading-tight mb-6">
-              {page.upcomingPerformancesTitle}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 lg:gap-x-8 gap-y-8">
-              {upcomingPerformances.map((performance) => (
-                <PerformanceCard key={performance.slug} {...performance} />
-              ))}
+          <>
+            <section className="my-6">
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tighter leading-tight mb-6">
+                {page.upcomingPerformancesTitle}
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 lg:gap-x-8 gap-y-8">
+                {upcomingPerformances.map((performance) => (
+                  <PerformanceCard key={performance.slug} {...performance} />
+                ))}
+              </div>
+            </section>
+            <div className="flex justify-center my-24">
+              <a
+                href="/liput"
+                className="inline-flex items-center px-8 py-4 text-xl font-bold text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors duration-200 transform hover:scale-105"
+              >
+                {page.ticketButtonText}
+              </a>
             </div>
-          </section>
-          <div className="flex justify-center my-24">
-            <a
-              href="/liput"
-              className="inline-flex items-center px-8 py-4 text-xl font-bold text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors duration-200 transform hover:scale-105"
-            >
-              {page.ticketButtonText}
-            </a>
-          </div>
+          </>
         )}
       </Container>
 

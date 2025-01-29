@@ -11,20 +11,16 @@
   ],
   "partners": [
     {
-      "name": "Aurorakören",
-      "url": "http://www.aurorakoren.fi/"
-    },
-    {
-      "name": "Kamarikuoro Melos",
-      "url": "http://www.melos.fi/"
-    },
-    {
-      "name": "Sekakuoro Kulkuset",
-      "url": "http://www.kulkuset.net/"
-    },
-    {
       "name": "Turun Karjala-Seura ry",
       "url": "http://www.karjalanliitto.fi/turunkarjalaseura"
+    },
+    {
+      "name": "Katariinan seurakunta",
+      "url": "http://www.turunseurakunnat.fi"
+    },
+    {
+      "name": "Mynämäen Mieslaulajat",
+      "url": "http://www.m.facebook.com"
     }
   ]
-} 
+}

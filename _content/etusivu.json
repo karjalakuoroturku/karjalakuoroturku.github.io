@@ -11,10 +11,6 @@
   "ticketButtonText": "Varaa tästä konserttiliput",
   "galleryImages": [
     {
-      "src": "/assets/etusivu/kuvagalleria/karjalakuoro-1.jpg",
-      "alt": "Kuoron harjoitukset"
-    },
-    {
       "src": "/assets/etusivu/kuvagalleria/karjalakuoro-2.jpg",
       "alt": "Kuoronjohtajamme Heikki Tapani Korhonen. Kuoron konserttiesiintyminen Maarian kirkossa"
     },

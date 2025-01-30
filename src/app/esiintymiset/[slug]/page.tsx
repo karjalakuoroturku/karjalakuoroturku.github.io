@@ -23,19 +23,6 @@ export default async function Performance({ params }: Params) {
       <Container>
         <Header />
         <article className="lg:my-32 md:my-16 my-8">
-          <div className="relative w-full h-[60vh] mb-8">
-            <Image
-              src={
-                performance.coverImage ||
-                "/assets/esiintymiset/oletuskuva.jpg"
-              }
-              alt={performance.name}
-              fill
-              priority
-              className="object-cover"
-              sizes="100vw"
-            />
-          </div>
           <PerformanceHeader
             name={performance.name}
             type={performance.type}

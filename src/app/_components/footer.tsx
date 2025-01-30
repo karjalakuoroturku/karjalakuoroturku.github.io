@@ -27,17 +27,17 @@ export async function Footer() {
               </li>
               <li>
                 <Link href="/liity" className="hover:text-gray-300">
-                  Liity mukaan
+                  Liity kuoroon
                 </Link>
               </li>
               <li>
-                <Link href="/yhteystiedot" className="hover:text-gray-300">
-                  Yhteystiedot
+                <Link href="/tilaa-keikka" className="hover:text-gray-300">
+                  Tilaa keikka
                 </Link>
               </li>
               <li>
-                <Link href="/yhteistyokumppanit" className="hover:text-gray-300">
-                  Yhteistyökumppanit
+                <Link href="/juhlavuosi-2025" className="hover:text-gray-300">
+                  Juhlavuosi 2025
                 </Link>
               </li>
             </ul>

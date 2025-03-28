@@ -3,7 +3,7 @@ name: KEVÄTTÄ RINNASSA
 type: konsertti
 location: RAISION MARTINSALI
 date: 2025-05-03T17:00:00.000Z
-coverImage: /assets/1743162031046-1e221bd5-bd58-462e-9733-b08b99651d25_1.jpg
+coverImage: /assets/uuf7svnb.png
 ---
 Tervetuloa keväiseen konserttiimme Raision Martinsaliin lauantaina 3.5.25 klo 17.00. Vierailevana kuoron teitä ilahduttaa Turun Poliisilaulajat. Kuoroja johtaa heikki Tapani Korhonen ja säestää Tuula Sailola.
 

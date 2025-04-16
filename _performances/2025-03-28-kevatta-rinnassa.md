@@ -2,7 +2,7 @@
 name: KEVÄTTÄ RINNASSA
 type: konsertti
 location: RAISION MARTINSALI
-date: 2025-05-03T17:00:00 Europe/Helsinki
+date: 2025-05-03T16:00:00 Europe/Helsinki
 endTime: "18.15"
 coverImage: /assets/1743162031046-1e221bd5-bd58-462e-9733-b08b99651d25_1-1.jpg
 excerpt: Turun Karjalakuoron kepeä keväinen konsertti la 3.5. klo 17.00 Raision

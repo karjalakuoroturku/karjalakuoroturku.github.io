@@ -3,7 +3,7 @@ import DateFormatter from "./date-formatter";
 import { format } from "date-fns";
 import { fi } from "date-fns/locale";
 import Image from "next/image";
-
+import { toZonedTime } from "date-fns-tz";
 interface Props {
   name: string;
   type: string;
@@ -19,7 +19,9 @@ export function PerformanceCard(props: Props) {
   const { name, type, location, coverImage, date, endTime, excerpt, slug } =
     props;
 
-  const dateObj = new Date(date);
+  // Since this is rendered on the server, we need to explicitly convert the
+  // date to the timezone it is to be displayed in
+  const dateObj = toZonedTime(date, "Europe/Helsinki");
 
   const startTime = format(dateObj, "HH.mm");
   const weekday = format(dateObj, "EEEEEE", { locale: fi });

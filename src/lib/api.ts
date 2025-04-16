@@ -17,7 +17,6 @@ export function getPerformanceBySlug(slug: string) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  console.log(data.date);
   const [dateTime, tz] = data.date.split(' ', 2);
   const utcDate = fromZonedTime(dateTime, tz);
 

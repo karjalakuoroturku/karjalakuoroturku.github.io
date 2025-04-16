@@ -1,6 +1,7 @@
 import CoverImage from "./performance-cover-image";
 import DateFormatter from "./date-formatter";
 import { format } from "date-fns";
+import { toZonedTime } from "date-fns-tz";
 import { fi } from "date-fns/locale";
 
 type Props = {
@@ -20,7 +21,9 @@ export function PerformanceHeader({
   date,
   endTime,
 }: Props) {
-  const dateObj = new Date(date);
+  // Since this is rendered on the server, we need to explicitly convert the
+  // date to the timezone it is to be displayed in
+  const dateObj = toZonedTime(date, "Europe/Helsinki");
 
   const startTime = format(dateObj, "HH.mm");
   const weekday = format(dateObj, "EEEEEE", { locale: fi });

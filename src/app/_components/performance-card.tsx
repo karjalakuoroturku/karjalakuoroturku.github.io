@@ -1,8 +1,7 @@
 import Link from "next/link";
 import DateFormatter from "./date-formatter";
-import { parseISO, format } from "date-fns";
+import { format } from "date-fns";
 import { fi } from "date-fns/locale";
-import { toZonedTime } from "date-fns-tz";
 import Image from "next/image";
 
 interface Props {
@@ -20,12 +19,10 @@ export function PerformanceCard(props: Props) {
   const { name, type, location, coverImage, date, endTime, excerpt, slug } =
     props;
 
-  const timeZone = "Europe/Helsinki";
-  const utcDate = parseISO(new Date(date).toISOString());
-  const finnishDate = toZonedTime(utcDate, timeZone);
+  const dateObj = new Date(date);
 
-  const startTime = format(finnishDate, "HH.mm");
-  const weekday = format(finnishDate, "EEEEEE", { locale: fi });
+  const startTime = format(dateObj, "HH.mm");
+  const weekday = format(dateObj, "EEEEEE", { locale: fi });
   const timeString = endTime ? `${startTime} - ${endTime}` : startTime;
 
   return (

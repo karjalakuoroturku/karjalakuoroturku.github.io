@@ -2,6 +2,8 @@ import { Performance } from "@/interfaces/performance";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
+import { parseISO } from "date-fns";
+import { toZonedTime } from "date-fns-tz";
 
 // performances
 const performancesDirectory = join(process.cwd(), "_performances");
@@ -16,10 +18,17 @@ export function getPerformanceBySlug(slug: string) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  // remove Z from stringified date to make it timezoneless
-  const date = data.date.toISOString().replace('Z', '');
+  // Convert to Finnish timezone
+  const utcDate = parseISO(data.date.toISOString());
+  const finnishDate = toZonedTime(utcDate, "Europe/Helsinki");
+  const formattedDate = finnishDate.toISOString().replace("Z", "");
 
-  return { ...data, slug: realSlug, date, content } as Performance;
+  return {
+    ...data,
+    slug: realSlug,
+    date: formattedDate,
+    content,
+  } as Performance;
 }
 
 export function getAllPerformances(): Performance[] {

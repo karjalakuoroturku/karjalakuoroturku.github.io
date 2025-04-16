@@ -2,7 +2,7 @@
 name: Lapsuuden Joulu
 type: Joulukonsertti
 location: Varissuon kirkko
-date: 2024-12-21T14:00:00.000Z
+date: 2024-12-21T14:00:00 Europe/Helsinki
 coverImage: /assets/IMG_2878 (3).jpg
 excerpt: Turun Karjalakuoron lämminhenkinen joulukonsertti. Kuoroa johtaa Heikki
   Tapani Korhonen, säestää Tuula Sailola.

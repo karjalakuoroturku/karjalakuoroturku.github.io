@@ -2,8 +2,7 @@ import { Performance } from "@/interfaces/performance";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
-import { parseISO } from "date-fns";
-import { toZonedTime } from "date-fns-tz";
+import { fromZonedTime } from "date-fns-tz";
 
 // performances
 const performancesDirectory = join(process.cwd(), "_performances");
@@ -18,15 +17,14 @@ export function getPerformanceBySlug(slug: string) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  // Convert to Finnish timezone
-  const utcDate = parseISO(data.date.toISOString());
-  const finnishDate = toZonedTime(utcDate, "Europe/Helsinki");
-  const formattedDate = finnishDate.toISOString().replace("Z", "");
+  console.log(data.date);
+  const [dateTime, tz] = data.date.split(' ', 2);
+  const utcDate = fromZonedTime(dateTime, tz);
 
   return {
     ...data,
     slug: realSlug,
-    date: formattedDate,
+    date: utcDate.toISOString(),
     content,
   } as Performance;
 }

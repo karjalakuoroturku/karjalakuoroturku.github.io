@@ -2,7 +2,7 @@
 name: Elämän Nälkä
 type: Konsertti
 location: Martinsali, Raisio
-date: 2024-10-27T13:00:00.000Z
+date: 2024-10-27T13:00:00 Europe/Helsinki
 coverImage: /assets/IMG_2796 (1).jpg
 excerpt: Konsertissa kuoro etenee laulujen keinoin varjosta valoon; kaihoa,
   iloa, ihmisen pienuutta, rakkautta ja elämän janoa.

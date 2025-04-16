@@ -2,7 +2,7 @@
 name: Kynttilöiden syttyessä
 type: Joulukonsertti
 location: Varissuon kirkko
-date: 2023-12-17T14:00:00.000Z
+date: 2023-12-17T14:00:00 Europe/Helsinki
 coverImage: /assets/IMG_6919 (1) joulu.jpg
 excerpt: Turun Karjalakuoron perinteinen joulukonsertti Varissuon kirkossa.
 ---

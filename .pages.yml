@@ -213,7 +213,7 @@ content:
       - { name: name, label: Esityksen nimi, type: string, required: true }
       - { name: type, label: Esityksen tyyppi, type: string, required: true }
       - { name: location, label: Paikka, type: string, required: true }
-      - { name: date, label: Päivämäärä ja aika, type: date, options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" }, required: true }
+      - { name: date, label: Päivämäärä ja aika, type: date, options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss' Europe/Helsinki'" }, required: true }
       - { name: endTime, label: Päättymisaika (esim. 20.00), type: string }
       - { name: coverImage, label: Kansikuva, type: image }
       - { name: excerpt, label: Lyhyt kuvaus, type: string }

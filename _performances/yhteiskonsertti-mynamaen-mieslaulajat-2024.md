@@ -2,7 +2,7 @@
 name: Suven aavistus
 type: Yhteiskonsertti
 location: Martinsali, Raisio
-date: 2024-04-14T13:00:00.000Z
+date: 2024-04-14T13:00:00 Europe/Helsinki
 coverImage: /assets/IMG_6918 suvi.jpg
 excerpt: Turun Karjalakuoron ja Mynämäen Mieslaulajien yhteiskonsertti. Keväisiä
   lauluja Karjalasta ja kauniista kotimaastamme.

@@ -16,7 +16,10 @@ export function getPerformanceBySlug(slug: string) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  return { ...data, slug: realSlug, content } as Performance;
+  // remove Z from stringified date to make it timezoneless
+  const date = data.date.toISOString().replace('Z', '');
+
+  return { ...data, slug: realSlug, date, content } as Performance;
 }
 
 export function getAllPerformances(): Performance[] {

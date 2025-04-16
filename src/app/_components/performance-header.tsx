@@ -9,7 +9,7 @@ type Props = {
   type: string;
   location: string;
   coverImage: string;
-  date: Date;
+  date: string;
   endTime?: string;
 };
 

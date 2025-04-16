@@ -10,7 +10,7 @@ interface Props {
   type: string;
   location: string;
   coverImage: string;
-  date: Date;
+  date: string;
   endTime?: string;
   excerpt: string;
   slug: string;
@@ -50,7 +50,7 @@ export function PerformanceCard(props: Props) {
         <div className="text-gray-600 mb-4">
           <div>{location}</div>
           <div>
-            {weekday} <DateFormatter date={new Date(date)} />
+            {weekday} <DateFormatter date={date} />
           </div>
           <div>{timeString}</div>
         </div>

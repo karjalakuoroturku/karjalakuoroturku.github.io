@@ -3,7 +3,7 @@ export type Performance = {
   name: string;
   type: string;
   location: string;
-  date: Date;
+  date: string;
   endTime?: string;
   coverImage: string;
   excerpt: string;

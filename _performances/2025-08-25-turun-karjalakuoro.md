@@ -9,12 +9,12 @@ Turun Karjalakuoron 80-vuotisjuhlakonsertti Sigyn-salissa, lauantaina 25.10.2025
 
 Kuoroa johtaa Heikki Tapani Korhonen, säestää Tuula Sailola.
 
-Ohjelmassa kuullaan kuoron rakkaimpia lauluja vuosien varrelta sekä tuoreempaa tuotantoa; kuoronjohtajan omalle kuorolle tehtyjä sovituksia ja sävellyksiä, mm. Karjala trilogia.
+Ohjelmassa kuullaan kuoron rakkaimpia lauluja vuosien varrelta, sekä tuoreempaa tuotantoa, kuoronjohtajan kuorolle tekemiä sovituksia ja sävellyksiä, mm. Karjala trilogia.
 
-Lipun hinta 20€. Lippuja saa kuorolaisilta ja ovelta (suosimme pankkikorttimaksua!). Ennakkovaraukset Tuire Leskelä 040 8345 849.
+Lipun hinta 20€. Lippuja saa kuorolaisilta ja ovelta ennen konsertin alkua (suosimme pankkikorttimaksua!). Ennakkovaraukset Tuire Leskelä 040 8345 849.
 
-Sigynin kahvila avoinna tuntia ennen konserttia sekä väliajan.
+Sigynin kahvila on avoinna tuntia ennen konserttia sekä väliajalla.
 
 Onnitteluiden vastaanotta Sigynin aulassa, klo 14.00-14.30
 
-OLET LÄMPIMÄSTI TERVETULLUT KONSERTTIIMME
+OLET LÄMPIMÄSTI TERVETULLUT KONSERTTIIMME!!

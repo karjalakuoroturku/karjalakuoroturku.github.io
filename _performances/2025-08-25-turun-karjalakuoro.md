@@ -11,7 +11,7 @@ Kuoroa johtaa Heikki Tapani Korhonen, säestää Tuula Sailola.
 
 Ohjelmassa kuullaan kuoron rakkaimpia lauluja vuosien varrelta, sekä tuoreempaa tuotantoa, kuoronjohtajan kuorolle tekemiä sovituksia ja sävellyksiä, mm. Karjala trilogia.
 
-Lipun hinta 20€. Lippuja saa kuorolaisilta ja ovelta ennen konsertin alkua (suosimme pankkikorttimaksua!). Ennakkovaraukset Tuire Leskelä 040 8345 849.
+Lipun hinta 20€ sisältää juhlavan käsiohjelman. Lippuja saa kuorolaisilta ja ovelta ennen konsertin alkua (suosimme pankkikorttimaksua!). Ennakkovaraukset Tuire Leskelä 040 8345 849.
 
 Sigynin kahvila on avoinna tuntia ennen konserttia sekä väliajalla.
 

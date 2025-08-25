@@ -1,6 +1,6 @@
 ---
-name: "TURUN KARJALAKUORO "
-type: 80-VUOTISJUHLAKONSERTTI
+name: TURUN KARJALAKUORO 80 VUOTTA
+type: JUHLAKONSERTTI
 location: Sigyn-sali, Linnankatu 60
 date: 2025-10-25T15:00:00 Europe/Helsinki
 coverImage: /assets/Kuorokuva 2025.jpg

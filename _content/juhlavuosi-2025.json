@@ -6,6 +6,51 @@
       "name": "Hansdotter",
       "logo": "/assets/Hansdotter.png",
       "url": "https://hansdotter.fi/"
+    },
+    {
+      "name": "Pesupalvelu Hans Langh",
+      "logo": "/assets/HansLangh.png",
+      "url": "https://www.hanslangh.fi/"
+    },
+    {
+      "name": "Laulustudio Cantario",
+      "logo": "/assets/LaulustudioCantario.png",
+      "url": "https://www.santtukola.fi/cantario/"
+    },
+    {
+      "name": "Lindroosin Puutarha",
+      "logo": "/assets/LindroosinPuutarha.png",
+      "url": "https://lindroosinpuutarha.fi/"
+    },
+    {
+      "name": "Maahovi Oy",
+      "logo": "/assets/MaahoviOy.png",
+      "url": "https://www.maahovi.fi/"
+    },
+    {
+      "name": "Nousiaisten Hautauspalvelu",
+      "logo": "/assets/NousiaistenHautauspalvelu.png",
+      "url": "https://nousiaistenhautaus.fi/"
+    },
+    {
+      "name": "Pika-Offset Oy",
+      "logo": "/assets/PikaOffset.png",
+      "url": "https://www.tuulanpikaoffset.fi/"
+    },
+    {
+      "name": "Puuha Timppa Oy",
+      "logo": "/assets/PuuhaTimppaOy.png",
+      "url": "https://puuhatimppa.fi/"
+    },
+    {
+      "name": "Hautaustoimisto Tähtinen",
+      "logo": "/assets/TähtinenHautaustoimisto.png",
+      "url": "https://hautaustoimistotahtinen.fi/"
+    },
+    {
+      "name": "Torkkelin Kilta",
+      "logo": "/assets/TorkkelinKilta.png",
+      "url": "https://turuntorkkelinkilta.wordpress.com/"
     }
   ]
 }

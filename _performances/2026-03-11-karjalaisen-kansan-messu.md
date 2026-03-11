@@ -1,6 +1,6 @@
 ---
 name: Karjalaisen kansan messu
-type: konsertti
+type: Messun laulut vievät ajatuksen Karjalaisen kansan tuntoihin
 location: Liedon kirkko
 date: 2026-04-26T19:00:00 Europe/Helsinki
 free: true

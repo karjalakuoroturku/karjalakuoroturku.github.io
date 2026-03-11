@@ -32,15 +32,21 @@ export default async function Performance({ params }: Params) {
             endTime={performance.endTime}
           />
           <PerformanceBody content={content} />
-          
-          <div className="flex justify-center mt-12">
-            <a
-              href="/liput"
-              className="inline-flex items-center px-8 py-4 text-xl font-bold text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors duration-200 transform hover:scale-105"
-            >
-              Osta liput
-            </a>
-          </div>
+
+          {!performance.free ? (
+            <div className="flex justify-center mt-12">
+              <a
+                href="/liput"
+                className="inline-flex items-center px-8 py-4 text-xl font-bold text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors duration-200 transform hover:scale-105"
+              >
+                Osta liput
+              </a>
+            </div>
+          ) : (
+            <p className="text-center mt-12 text-lg font-semibold">
+              Vapaa pääsy
+            </p>
+          )}
         </article>
       </Container>
     </main>

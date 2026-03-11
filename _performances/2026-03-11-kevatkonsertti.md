@@ -6,7 +6,7 @@ date: 2026-05-17T16:00:00 Europe/Helsinki
 free: false
 excerpt: "Karjalakuoron keväinen konsertti "
 ---
-Tervetuloa keväiseen konserttiimme Raision Martinsaliin sunnuntaina 17.5.25 klo 16.00.
+Tervetuloa keväiseen konserttiimme Raision Martinsaliin sunnuntaina 17.5.2026 klo 16.00.
 
 Kuoroja johtaa Heikki Tapani Korhonen ja säestää Tuula Sailola.
 

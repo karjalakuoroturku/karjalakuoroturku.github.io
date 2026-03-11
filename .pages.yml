@@ -215,6 +215,7 @@ content:
       - { name: location, label: Paikka, type: string, required: true }
       - { name: date, label: Päivämäärä ja aika, type: date, options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss' Europe/Helsinki'" }, required: true }
       - { name: endTime, label: Päättymisaika (esim. 20.00), type: string }
+      - { name: free, label: Vapaa pääsy, type: boolean, default: false }
       - { name: coverImage, label: Kansikuva, type: image }
       - { name: excerpt, label: Lyhyt kuvaus, type: string }
       - { name: body, label: Sisältö, type: rich-text }

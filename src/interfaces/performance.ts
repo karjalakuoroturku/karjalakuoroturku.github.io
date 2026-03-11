@@ -9,4 +9,5 @@ export type Performance = {
   excerpt: string;
   content: string;
   preview?: boolean;
+  free?: boolean;
 }; 

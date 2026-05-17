@@ -4,6 +4,7 @@ type: Kesäjuhlat 13.-14.6.
 location: Oulu
 date: 2026-06-13T09:30:00 Europe/Helsinki
 free: true
+coverImage: /assets/karjalaiset-kesajuhlat.jpg
 excerpt: "Karjalaiset kesäjuhlat järjestetään tänä kesänä 13.–14.6.2026 Oulussa,
   Euroopan kulttuuripääkaupungissa. "
 ---

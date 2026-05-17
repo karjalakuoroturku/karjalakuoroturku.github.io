@@ -5,7 +5,7 @@ location: Kirjastosillan ympäristö, Aurajoen ranta
 date: 2026-08-13T19:00:00 Europe/Helsinki
 endTime: "23.30"
 free: true
-excerpt: Kuorojuhla kokoaa Turun seudun kuoroja laulamaan yhdessä
+excerpt: Kuorojuhla kokoaa Turun seudun kuoroja laulamaan yhdessä.
 ---
 *Aurajoki soi -kuorojuhla* yhdistää tänä vuonna Taiteiden yön illassa Turun musiikkijuhlien *Joki soi -*hankkeen ja Sulasolin *Aurajoella raikaa -*tapahtuman yhdeksi suureksi kuorojuhlaksi. Tapahtuma kokoaa Turun seudun kuoroja laulamaan yhdessä – yhteislaulua, valoa ja yhteisöllisyyttä keskellä kaupunkia. Aurajoki soi tekee Aurajoesta elävän ja soivan näyttämön. 
 

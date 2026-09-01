@@ -220,6 +220,20 @@ content:
       - { name: excerpt, label: Lyhyt kuvaus, type: string }
       - { name: body, label: Sisältö, type: rich-text }
 
+  - name: blogi
+    label: Blogi
+    type: collection
+    path: _blog
+    view:
+      fields: [ coverImage, title, date ]
+    fields:
+      - { name: title, label: Otsikko, type: string, required: true }
+      - { name: date, label: Julkaisupäivä, type: date, options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss' Europe/Helsinki'" }, required: true }
+      - { name: author, label: Kirjoittaja, type: string }
+      - { name: coverImage, label: Kansikuva, type: image }
+      - { name: excerpt, label: Lyhyt kuvaus, type: string, required: true }
+      - { name: body, label: Sisältö, type: rich-text }
+
   - name: footer
     label: Footer
     type: file

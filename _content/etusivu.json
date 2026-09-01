@@ -11,6 +11,14 @@
   "ticketButtonText": "Varaa tästä konserttiliput",
   "galleryImages": [
     {
+      "src": "/assets/mylly20260822-1.jpeg",
+      "alt": "Yllätysesiintyminen Mylly-kauppakeskuksessa 22.8.2026"
+    },
+    {
+      "src": "/assets/aurajokiSoi20260813.jpeg",
+      "alt": "Karjalakuoro osana suurkuoroa Aurajoella soi -tapahtumassa 13.8.2026"
+    },
+    {
       "src": "/assets/etusivu/kuvagalleria/karjalakuoro-2.jpg",
       "alt": "Kuoronjohtajamme Heikki Tapani Korhonen. Kuoron konserttiesiintyminen Maarian kirkossa"
     },

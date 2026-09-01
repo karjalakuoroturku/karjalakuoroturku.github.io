@@ -130,6 +130,17 @@ const Header = ({ hideLogo = false }: { hideLogo?: boolean }) => {
                   Yhteystiedot
                 </Link>
               </li>
+              <li className={`px-2 rounded-lg ${!isMenuOpen ? "xl:bg-transparent bg-white" : ""}`}>
+                <Link
+                  href="/blogi"
+                  className={`hover:text-red-500 ${
+                    pathname === "/blogi" ? "text-red-500" : "text-gray-800"
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Blogi
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/juhlavuosi-2025"

@@ -1,4 +1,5 @@
 import { Performance } from "@/interfaces/performance";
+import { BlogPost } from "@/interfaces/blogPost";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
@@ -37,6 +38,40 @@ export function getAllPerformances(): Performance[] {
       performance1.date > performance2.date ? -1 : 1
     );
   return performances;
+}
+
+// blog posts
+const blogDirectory = join(process.cwd(), "_blog");
+
+export function getBlogPostSlugs() {
+  return fs.readdirSync(blogDirectory);
+}
+
+export function getBlogPostBySlug(slug: string) {
+  const realSlug = slug.replace(/\.md$/, "");
+  const fullPath = join(blogDirectory, `${realSlug}.md`);
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const { data, content } = matter(fileContents);
+
+  const [dateTime, tz] = data.date.split(' ', 2);
+  const utcDate = fromZonedTime(dateTime, tz);
+
+  return {
+    ...data,
+    slug: realSlug,
+    date: utcDate.toISOString(),
+    content,
+  } as BlogPost;
+}
+
+export function getAllBlogPosts(): BlogPost[] {
+  const slugs = getBlogPostSlugs();
+  const posts = slugs
+    .map((slug) => getBlogPostBySlug(slug))
+    .filter((post) => !post.preview)
+    // sort posts by date in descending order
+    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+  return posts;
 }
 
 // content pages

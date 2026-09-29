@@ -1,5 +1,5 @@
 ---
-title: Aurajoki soi, ja se soi, ja se soi
+title: Aurajoki soi, Karjalakuoro kajautti!
 date: 2026-09-29T15:26:00 Europe/Helsinki
 author: Turun Karjalakuoro
 coverImage: /assets/aurajokiSoi20260813-1.jpeg

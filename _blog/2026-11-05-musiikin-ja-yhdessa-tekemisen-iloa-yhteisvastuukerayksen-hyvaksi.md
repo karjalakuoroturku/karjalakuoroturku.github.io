@@ -16,4 +16,4 @@ Erityisen iloinen hetki kuorolle oli yhteistyön aloittaminen uuden säestäjän
 
 Musiikin lisäksi iltaan kuuluivat tietenkin myös pullakahvit, joiden tuotto ohjattiin Yhteisvastuukeräyksen hyväksi. Leipomo Rostenin herkulliset leivonnaiset kruunasivat kahvihetken.
 
-Lämmin kiitos Yli-Maarian seurakunnalle kutsusta, sekä kaikille paikalle saapuneille kuulijoille ja lahjoittajille! Oli ilo olla mukana tekemässä hyvää musiikin ja yhdessäolon voimin.
+Lämmin kiitos Maarian seurakunnalle kutsusta, sekä kaikille paikalle saapuneille kuulijoille ja lahjoittajille! Oli ilo olla mukana tekemässä hyvää musiikin ja yhdessäolon voimin.

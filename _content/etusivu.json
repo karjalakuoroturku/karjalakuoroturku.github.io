@@ -11,6 +11,10 @@
   "ticketButtonText": "Varaa tästä konserttiliput",
   "galleryImages": [
     {
+      "src": "/assets/ylimaaria2_20261024.jpeg",
+      "alt": "Maarian seurakunnan Yhteisvastuukeräyskonsertti 24.10.2026"
+    },
+    {
       "src": "/assets/mylly20260822-1.jpeg",
       "alt": "Yllätysesiintyminen Mylly-kauppakeskuksessa 22.8.2026"
     },
